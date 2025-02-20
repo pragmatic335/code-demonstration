@@ -7,7 +7,7 @@ use App\Domain\Orders\Order\Resources\OrderResource;
 use App\Domain\Orders\Order\Requests\CreateOrderData;
 use App\Domain\Orders\Order\Events\OrderCreatedEvent;
 
-class OrderService
+final class OrderService
 {
     public function create(CreateOrderData $orderData): OrderResource
     {
@@ -19,7 +19,15 @@ class OrderService
         return OrderResource::from($newOrder);
     }
 
+    public function delete(Order $order): void
+    {
+        $this->someWork();
+
+        $order->delete();
+    }
+
     private function someWork(): void
     {
+
     }
 }
