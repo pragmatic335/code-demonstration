@@ -15,4 +15,5 @@
 .env
 .env.backup
 .env.production
+.idea
 docker-compose.override.yml
