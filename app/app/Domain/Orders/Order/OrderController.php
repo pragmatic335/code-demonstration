@@ -11,8 +11,6 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 
 class OrderController extends Controller
 {
-    use ValidatesRequests;
-
     public function create(CreateOrderData $orderData): OrderResource
     {
         return OrderFacade::create($orderData);
