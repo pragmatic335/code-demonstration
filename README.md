@@ -8,11 +8,15 @@
 В качестве data objects используется [spatie/laravel-data](https://spatie.be/docs/laravel-data/v4/introduction). Примеры реализация репозитория. Тестовое задание с фермой смотреть app/console/commands. Классы для тестового в app/domain/farm
 
 Запуск!!!
-Находясь в корне проекта выполнить последовательно команды
+Находясь в корне проекта выполнить последовательно
 
-cd app
-php composer install или php composer.phar install
+Переименовать .env.testing в .evn  в корне проекта и в папке app
 docker-compose up -d
+docker exec -it laravel bash
+php composer install
+
+Готово
+
 
 
 <img src="./app/public/slonik.webp" alt="SLONYARA">
